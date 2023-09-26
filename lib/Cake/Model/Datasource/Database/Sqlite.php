@@ -102,7 +102,7 @@ class Sqlite extends DboSource {
 		),
 	);
 
-/**
+	/**
  * Connects to the database using config['database'] as a filename.
  *
  * @return bool
@@ -302,7 +302,6 @@ class Sqlite extends DboSource {
  * @return void
  */
 	public function resultSet($results) {
-		$this->results = $results;
 		$this->map = array();
 		$numFields = $results->columnCount();
 		$index = 0;
